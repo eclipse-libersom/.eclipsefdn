@@ -19,4 +19,9 @@ orgs.newOrg('automotive.libersom', 'eclipse-libersom') {
       default_workflow_permissions: "write",
     },
   },
+} + {
+  # snippet added due to 'https://github.com/eclipsefdn/otterdog-configs/blob/main/blueprints/add-dot-github-repo.yml'
+  _repositories+:: [
+    orgs.newRepo('.github')
+  ],
 }
